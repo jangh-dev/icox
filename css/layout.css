@@ -214,9 +214,16 @@ section span{
 }
 .list a > img{
   width:100%;
+  top: 0;
   border:1px solid #d8d8d8;
   border-radius:3px 3px;
   box-shadow:3px 3px 5px 0px #595959;
+  transition: top 1s ease .05s;
+}
+
+.list a > img:hover {
+	position: relative;
+	top: -10px;
 }
 
 #line_1{
@@ -368,9 +375,12 @@ section span{
 /* footer */
 
 .footer_wrap {
-	height: 100px;
 	margin-top: 50px;
 	background-color: #2A2332;
+}
+
+.footer {
+	height: 100px;
 	line-height: 100px;
 }
 
@@ -385,4 +395,9 @@ section span{
 
 .footer li a {
 	color: #fff;
+}
+
+.footer_wrap div:nth-child(2) {
+	border-top: 1px solid #4a4253;
+	text-align: center;
 }
